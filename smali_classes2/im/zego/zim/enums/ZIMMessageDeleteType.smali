@@ -1,0 +1,195 @@
+.class public final enum Lim/zego/zim/enums/ZIMMessageDeleteType;
+.super Ljava/lang/Enum;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Lim/zego/zim/enums/ZIMMessageDeleteType;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final synthetic $VALUES:[Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+.field public static final enum ALL_CONVERSATION_MESSAGES_DELETED:Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+.field public static final enum CONVERSATION_ALL_MESSAGES_DELETED:Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+.field public static final enum MESSAGE_LIST_DELETED:Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+.field public static final enum UNKNOWN:Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+
+# instance fields
+.field private final value:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 9
+
+    new-instance v0, Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+    const-string v1, "UNKNOWN"
+
+    const/4 v2, 0x0
+
+    const/4 v3, -0x1
+
+    invoke-direct {v0, v1, v2, v3}, Lim/zego/zim/enums/ZIMMessageDeleteType;-><init>(Ljava/lang/String;II)V
+
+    sput-object v0, Lim/zego/zim/enums/ZIMMessageDeleteType;->UNKNOWN:Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+    new-instance v1, Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+    const-string v3, "MESSAGE_LIST_DELETED"
+
+    const/4 v4, 0x1
+
+    invoke-direct {v1, v3, v4, v2}, Lim/zego/zim/enums/ZIMMessageDeleteType;-><init>(Ljava/lang/String;II)V
+
+    sput-object v1, Lim/zego/zim/enums/ZIMMessageDeleteType;->MESSAGE_LIST_DELETED:Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+    new-instance v3, Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+    const-string v5, "CONVERSATION_ALL_MESSAGES_DELETED"
+
+    const/4 v6, 0x2
+
+    invoke-direct {v3, v5, v6, v4}, Lim/zego/zim/enums/ZIMMessageDeleteType;-><init>(Ljava/lang/String;II)V
+
+    sput-object v3, Lim/zego/zim/enums/ZIMMessageDeleteType;->CONVERSATION_ALL_MESSAGES_DELETED:Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+    new-instance v5, Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+    const-string v7, "ALL_CONVERSATION_MESSAGES_DELETED"
+
+    const/4 v8, 0x3
+
+    invoke-direct {v5, v7, v8, v6}, Lim/zego/zim/enums/ZIMMessageDeleteType;-><init>(Ljava/lang/String;II)V
+
+    sput-object v5, Lim/zego/zim/enums/ZIMMessageDeleteType;->ALL_CONVERSATION_MESSAGES_DELETED:Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+    const/4 v7, 0x4
+
+    new-array v7, v7, [Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+    aput-object v0, v7, v2
+
+    aput-object v1, v7, v4
+
+    aput-object v3, v7, v6
+
+    aput-object v5, v7, v8
+
+    sput-object v7, Lim/zego/zim/enums/ZIMMessageDeleteType;->$VALUES:[Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+    return-void
+.end method
+
+.method private constructor <init>(Ljava/lang/String;II)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)V"
+        }
+    .end annotation
+
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    iput p3, p0, Lim/zego/zim/enums/ZIMMessageDeleteType;->value:I
+
+    return-void
+.end method
+
+.method public static getZIMMessageDeleteType(I)Lim/zego/zim/enums/ZIMMessageDeleteType;
+    .locals 2
+
+    :try_start_0
+    sget-object v0, Lim/zego/zim/enums/ZIMMessageDeleteType;->MESSAGE_LIST_DELETED:Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+    invoke-virtual {v0}, Lim/zego/zim/enums/ZIMMessageDeleteType;->value()I
+
+    move-result v1
+
+    if-ne v1, p0, :cond_0
+
+    return-object v0
+
+    :cond_0
+    sget-object v0, Lim/zego/zim/enums/ZIMMessageDeleteType;->CONVERSATION_ALL_MESSAGES_DELETED:Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+    iget v1, v0, Lim/zego/zim/enums/ZIMMessageDeleteType;->value:I
+
+    if-ne v1, p0, :cond_1
+
+    return-object v0
+
+    :cond_1
+    sget-object v0, Lim/zego/zim/enums/ZIMMessageDeleteType;->ALL_CONVERSATION_MESSAGES_DELETED:Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+    iget v1, v0, Lim/zego/zim/enums/ZIMMessageDeleteType;->value:I
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-ne v1, p0, :cond_2
+
+    return-object v0
+
+    :cond_2
+    sget-object p0, Lim/zego/zim/enums/ZIMMessageDeleteType;->UNKNOWN:Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+    return-object p0
+
+    :catch_0
+    new-instance p0, Ljava/lang/RuntimeException;
+
+    const-string v0, "The enumeration cannot be found"
+
+    invoke-direct {p0, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Lim/zego/zim/enums/ZIMMessageDeleteType;
+    .locals 1
+
+    const-class v0, Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object p0
+
+    check-cast p0, Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+    return-object p0
+.end method
+
+.method public static values()[Lim/zego/zim/enums/ZIMMessageDeleteType;
+    .locals 1
+
+    sget-object v0, Lim/zego/zim/enums/ZIMMessageDeleteType;->$VALUES:[Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+    invoke-virtual {v0}, [Lim/zego/zim/enums/ZIMMessageDeleteType;->clone()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Lim/zego/zim/enums/ZIMMessageDeleteType;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public value()I
+    .locals 1
+
+    iget v0, p0, Lim/zego/zim/enums/ZIMMessageDeleteType;->value:I
+
+    return v0
+.end method

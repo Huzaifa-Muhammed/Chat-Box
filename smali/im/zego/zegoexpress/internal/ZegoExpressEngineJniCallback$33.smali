@@ -1,0 +1,56 @@
+.class Lim/zego/zegoexpress/internal/ZegoExpressEngineJniCallback$33;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lim/zego/zegoexpress/internal/ZegoExpressEngineJniCallback;->onPlayerQualityUpdate(Ljava/lang/String;Lim/zego/zegoexpress/entity/ZegoPlayStreamQuality;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic val$quality:Lim/zego/zegoexpress/entity/ZegoPlayStreamQuality;
+
+.field final synthetic val$streamID:Ljava/lang/String;
+
+
+# direct methods
+.method constructor <init>(Ljava/lang/String;Lim/zego/zegoexpress/entity/ZegoPlayStreamQuality;)V
+    .locals 0
+
+    iput-object p1, p0, Lim/zego/zegoexpress/internal/ZegoExpressEngineJniCallback$33;->val$streamID:Ljava/lang/String;
+
+    iput-object p2, p0, Lim/zego/zegoexpress/internal/ZegoExpressEngineJniCallback$33;->val$quality:Lim/zego/zegoexpress/entity/ZegoPlayStreamQuality;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 3
+
+    sget-object v0, Lim/zego/zegoexpress/internal/ZegoExpressEngineInternalImpl;->eventHandler:Lim/zego/zegoexpress/callback/IZegoEventHandler;
+
+    if-eqz v0, :cond_0
+
+    iget-object v1, p0, Lim/zego/zegoexpress/internal/ZegoExpressEngineJniCallback$33;->val$streamID:Ljava/lang/String;
+
+    iget-object v2, p0, Lim/zego/zegoexpress/internal/ZegoExpressEngineJniCallback$33;->val$quality:Lim/zego/zegoexpress/entity/ZegoPlayStreamQuality;
+
+    invoke-virtual {v0, v1, v2}, Lim/zego/zegoexpress/callback/IZegoEventHandler;->onPlayerQualityUpdate(Ljava/lang/String;Lim/zego/zegoexpress/entity/ZegoPlayStreamQuality;)V
+
+    :cond_0
+    return-void
+.end method

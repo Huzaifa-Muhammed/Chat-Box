@@ -1,0 +1,74 @@
+.class public final Le0/g$a;
+.super Landroidx/datastore/preferences/protobuf/y$a;
+.source "SourceFile"
+
+# interfaces
+.implements Landroidx/datastore/preferences/protobuf/s0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Le0/g;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Landroidx/datastore/preferences/protobuf/y$a<",
+        "Le0/g;",
+        "Le0/g$a;",
+        ">;",
+        "Landroidx/datastore/preferences/protobuf/s0;"
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 1
+
+    invoke-static {}, Le0/g;->K()Le0/g;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Landroidx/datastore/preferences/protobuf/y$a;-><init>(Landroidx/datastore/preferences/protobuf/y;)V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Le0/e;)V
+    .locals 0
+
+    invoke-direct {p0}, Le0/g$a;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public A(Ljava/lang/Iterable;)Le0/g$a;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Iterable<",
+            "Ljava/lang/String;",
+            ">;)",
+            "Le0/g$a;"
+        }
+    .end annotation
+
+    invoke-virtual {p0}, Landroidx/datastore/preferences/protobuf/y$a;->v()V
+
+    iget-object v0, p0, Landroidx/datastore/preferences/protobuf/y$a;->b:Landroidx/datastore/preferences/protobuf/y;
+
+    check-cast v0, Le0/g;
+
+    invoke-static {v0, p1}, Le0/g;->L(Le0/g;Ljava/lang/Iterable;)V
+
+    return-object p0
+.end method
