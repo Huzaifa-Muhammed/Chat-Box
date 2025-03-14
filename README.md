@@ -34,21 +34,34 @@ Built using **ZegoCloud** for seamless calling and Firebase for authentication &
 
 ## 📸 Screenshots  
 
-### 💬 Individual Chat  
-<img src="screenshots/chat.jpg" alt="Chat Screen" width="500">
+### 🔑 Sign-in/Sign-up
+  <table>
+  <tr>
+    <td><img src="screenshots/login_dark.jpg" alt="Light Mode" width="200" height="400"></td>
+    <td><img src="screenshots/login_light.jpg" alt="Dark Mode" width="200" height="400"></td>
+  </tr>
+</table>
 
-### 📞 Video Call  
-<img src="screenshots/call.jpg" alt="Video Call" width="500">
+### 🏠 Home Page
+<table>
+  <tr>
+    <td><img src="screenshots/chat_light.jpg" alt="Light Mode" width="200" height="400"></td>
+    <td><img src="screenshots/chat_dark.jpg" alt="Dark Mode" width="200" height="400"></td>
+  </tr>
+</table>
 
-### 🌙 Dark Mode  
-<img src="screenshots/dark_mode.jpg" alt="Dark Mode" width="500">
+### 💬 Individual Chat
+<img src="screenshots/1-1_chat.jpg" alt="Video Call" width="200" height="400">
+
+### 💬 Group Chat
+<img src="screenshots/groups_light.jpg" alt="Video Call" width="200" height="400">
+
+### 👤 Profile
+<img src="screenshots/profile.jpg" alt="Dark Mode" width="200" height="400">
 
 ---
 
 ## 🚀 How to Run  
 
-1️⃣ **Clone the repo:**  
 ```bash
-git clone https://github.com/YourUsername/ChatBox.git
-cd ChatBox
-flutter pub get
+don't run. it is not the code but reverse of original apk
